@@ -1,0 +1,63 @@
+
+<html>
+<head></head>
+<body>
+测试
+
+<script type="text/javascript">
+    
+function doRequest (name) {
+    var url = 'http://120.79.54.102/c1_2_'+name+'.html';
+    var data = '';
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+    };
+    request.open('get', url, true);
+    request.send(data);
+}
+
+</script>
+
+
+<script type="text/javascript">
+    doRequest("1");
+</script>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274125884'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1274125884%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+<script type="text/javascript">
+    doRequest("2");
+</script>
+
+
+ <script id="count-js" src="http://wx.china.cn/JSSDK/counts.js?ENV=dev"></script>
+  <script type="text/javascript">
+    
+    doRequest("3");
+ 
+    if(!!window.JSsdk) {
+      
+      doRequest("4")
+
+      window.sdkShareData = {
+        "language": "zh",
+        "menuIds": JSON.stringify(["3"]),
+        "menuNames": JSON.stringify(["recommed"]), 
+        "menuId": "3",  
+        "menuName": "recommed", 
+        "pageNum": 1 
+      }
+      JSsdk.sendData("zh", {
+        "eventName": "scanMenu",
+        "eventData": window.sdkShareData
+      }, function (res) {
+        // console.log(res);
+      });
+    }
+  </script>
+
+
+<img src="http://120.79.54.102/stat_img.html"/>
+</body>
+</html>
